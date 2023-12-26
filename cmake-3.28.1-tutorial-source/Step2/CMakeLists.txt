@@ -30,3 +30,7 @@ target_include_directories(Tutorial PUBLIC
                            "${PROJECT_BINARY_DIR}"
                            "${PROJECT_SOURCE_DIR}/MathFunctions"
                            )
+
+#message 在 cmake .. 阶段在终端 可以查看到
+#两个 message比较发现 ,该变量 PROJECT_SOURCE_DIR  指的是 project所在的文件路径 都是一样的
+message(STATUS out --"${PROJECT_SOURCE_DIR}")

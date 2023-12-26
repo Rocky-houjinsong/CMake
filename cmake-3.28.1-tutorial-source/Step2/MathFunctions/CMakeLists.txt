@@ -8,7 +8,8 @@ add_library(MathFunctions MathFunctions.cxx)
 
 # TODO 7: Create a variable USE_MYMATH using option and set default to ON
 # 该选项 可由用户更改
-option(USE_MYMATH "Use tutorial provided math implementation" ON)
+option(USE_MYMATH "Use tutorial provided math implementation,this is 提示信息:" ON)
+message(STATUS USE_MYMATH = "${USE_MYMATH}")
 # TODO 8: If USE_MYMATH is ON, use target_compile_definitions to pass
 # USE_MYMATH as a precompiled definition to our source files
 # 检查值,若是则启用源代码中的某些部分
@@ -23,3 +24,6 @@ add_library(SqrtLibrary STATIC
 )
 # TODO 13: When USE_MYMATH is ON, link SqrtLibrary to the MathFunctions Library
 target_link_libraries(MathFunctions PRIVATE SqrtLibrary)
+
+
+message(STATUS MathFunctions -$$- "${PROJECT_SOURCE_DIR}")
