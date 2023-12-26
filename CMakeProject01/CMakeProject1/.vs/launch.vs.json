@@ -1,0 +1,23 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "CMakeProject1.exe (CMakeProject1\\CMakeProject1.exe)",
+      "name": "我写的启动配置文件",
+      "cwd": "${workspaceRoot}",
+      "currentDir": "${workspaceRoot}"
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "test1.exe",
+      "name": "我写的test1启动配置文件",
+      "cwd": "${workspaceRoot}",
+      "currentDir": "${workspaceRoot}"
+    }
+
+  ]
+}

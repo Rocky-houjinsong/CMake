@@ -1,0 +1,6 @@
+# ninja log v5
+2	616	7252678205670789	CMakeFiles/Tutorial.dir/tutorial.cxx.obj	e9c5b5cb2a86db82
+965	1218	7252684909076652	Tutorial.exe	fb148705f3c58f51
+890	965	7252684907099550	MathFunctions/MathFunctions.lib	9aa64208c070ad2c
+4	419	7252684901720016	MathFunctions/CMakeFiles/MathFunctions.dir/MathFunctions.cxx.obj	12a660588f66fd63
+9	889	7252684906467303	MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.obj	5379b402d2d99a45
