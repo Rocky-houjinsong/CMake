@@ -15,17 +15,22 @@ int main(int argc, char* argv[])
     std::cout << argv[0] << "Version" << Tutorial_VERSION_MAJOR << "."
         << Tutorial_VERSION_MINOR << std::endl;
     std::cout << "Usage: " << argv[0] << " number" << std::endl;
+    std::cout << "_cplusplus: " <<__cplusplus << std::endl;
+    std::cout << "Tutorial_VERSION_MAJOR: " << Tutorial_VERSION_MAJOR << std::endl;
+    std::cout << "Tutorial_VERSION_MINOR: " << Tutorial_VERSION_MINOR << std::endl;
+    std::cout << "STR_TEST: " << STR_TEST << std::endl;
+
     return 1;
   }
 
   // convert input to double
   // TODO 4: Replace atof(argv[1]) with std::stod(argv[1])
   //const double inputValue = atof(argv[1]);   // 该行被注释
-  //const double inputValue = std::stod(argv[1]);  // 使用该行
+  const double inputValue = std::stod(argv[1]);  // 使用该行
 
-  ////calculate square root
-  //const double outputValue = std::sqrt(inputValue);
-  //std::cout << "The square root of " << inputValue << " is " << outputValue
-  //          << std::endl;
+  //calculate square root
+  const double outputValue = std::sqrt(inputValue);
+  std::cout << "The square root of " << inputValue << " is " << outputValue
+            << std::endl;
   return 0;
 }

@@ -50,7 +50,7 @@ cmake_ninja_workdir = D$:\Code\My\CMake\cmake-3.28.1-tutorial-source\Step1\out\b
 build cmake_object_order_depends_target_Tutorial: phony || CMakeFiles\Tutorial.dir
 
 build CMakeFiles\Tutorial.dir\tutorial.cxx.obj: CXX_COMPILER__Tutorial_unscanned_Debug D$:\Code\My\CMake\cmake-3.28.1-tutorial-source\Step1\tutorial.cxx || cmake_object_order_depends_target_Tutorial
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
   INCLUDES = -ID:\Code\My\CMake\cmake-3.28.1-tutorial-source\Step1\out\build\x64-debug
   OBJECT_DIR = CMakeFiles\Tutorial.dir
   OBJECT_FILE_DIR = CMakeFiles\Tutorial.dir

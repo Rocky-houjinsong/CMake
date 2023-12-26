@@ -13,7 +13,8 @@
   },
   "ExpandedNodes": [
     "",
-    "\\out"
+    "\\build"
   ],
+  "SelectedNode": "\\build\\CMakeFiles",
   "PreviewInSolutionExplorer": false
 }
