@@ -13,15 +13,16 @@ project(Tutorial VERSION 1.0)
 #set(CMAKE_CXX_STANDARD 11)
 #set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_library(tutorial_compiler_flags INTERFACE)
-target_compile_features(tutorial_compiler_flags INTERFACE cxx_std_11)
+target_compile_features(tutorial_compiler_flags INTERFACE cxx_std_20)
 # configure a header file to pass some of the CMake settings
 # to the source code
 configure_file(TutorialConfig.h.in TutorialConfig.h)
 
-# TODO 2: Remove EXTRA_INCLUDES list
-
+# TODO 2: Remove EXTRA_INCLUDES list  作废
+#list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions")
 # add the MathFunctions library
 add_subdirectory(MathFunctions)
+message(STATUS "OUT ====== ${CMAKE_CURRENT_SOURCE_DIR}")
 #list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions")
 
 # add the executable
@@ -37,5 +38,4 @@ target_link_libraries(Tutorial PUBLIC MathFunctions tutorial_compiler_flags)
 # so that we will find TutorialConfig.h
 target_include_directories(Tutorial PUBLIC
                            "${PROJECT_BINARY_DIR}"
-                           "${PROJECT_SOURCE_DIR}/MathFunctions"
                            )

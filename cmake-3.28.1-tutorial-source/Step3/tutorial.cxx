@@ -13,6 +13,7 @@ int main(int argc, char* argv[])
     std::cout << argv[0] << " Version " << Tutorial_VERSION_MAJOR << "."
               << Tutorial_VERSION_MINOR << std::endl;
     std::cout << "Usage: " << argv[0] << " number" << std::endl;
+    std::cout << "CXX_cplusplus: " << __cplusplus<< std::endl;
     return 1;
   }
 

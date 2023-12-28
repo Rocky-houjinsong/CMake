@@ -29,6 +29,10 @@ target_link_libraries(MathFunctions PUBLIC tutorial_compiler_flags)
 # libraries we want to install (e.g. MathFunctions and tutorial_compiler_flags)
 # Then install the installable libraries to the lib folder.
 # Hint: Use the TARGETS and DESTINATION parameters
-
+#何为 目标 ?  类库/可执行文件
+set(installable_libs MathFunctions tutorial_compiler_flags)
+install(TARGETS ${installable_libs} DESTINATION lib)
 # TODO 2: Install the library headers to the include folder.
 # Hint: Use the FILES and DESTINATION parameters
+#这里直接写是 该头文件 和 该CMakeLists.txt在同一个文件夹下
+install(FILES MathFunctions.h  DESTINATION include)

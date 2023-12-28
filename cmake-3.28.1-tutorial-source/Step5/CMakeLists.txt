@@ -36,10 +36,14 @@ target_include_directories(Tutorial PUBLIC
 
 # TODO 3: Install Tutorial in the bin directory
 # Hint: Use the TARGETS and DESTINATION parameters
-
+install(TARGETS Tutorial DESTINATION bin)
+message(STATUS "CMake Install =======================${CMAKE_INSTALL_PREFIX}")
 # TODO 4: Install TutorialConfig.h to the include directory
 # Hint: Use the FILES and DESTINATION parameters
-
+# 此处 不在同一个文件夹下 
+#更新不及时,缓存问题
+#安装 可指定到 当前项目下,而非 到CMake的安装路径
+install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h" DESTINATION include)
 # TODO 5: Enable testing
 
 # TODO 6: Add a test called Runs which runs the following command:
