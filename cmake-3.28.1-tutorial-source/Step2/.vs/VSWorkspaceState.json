@@ -13,9 +13,8 @@
   },
   "ExpandedNodes": [
     "",
-    "\\MathFunctions",
-    "\\SqrtLibrary"
+    "\\MathFunctions"
   ],
-  "SelectedNode": "\\MathFunctions\\mysqrt.h",
+  "SelectedNode": "\\MathFunctions\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }
