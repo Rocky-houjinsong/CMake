@@ -5,7 +5,6 @@
 namespace mathfunctions {
 namespace detail {
 // a hack square root calculation using simple operations
-// 该函数 与 编译器提供的sqrt功能相似
 double mysqrt(double x)
 {
   if (x <= 0) {
